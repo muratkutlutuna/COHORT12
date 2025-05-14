@@ -3,18 +3,29 @@
 *.wav
 *.mp4
 
-# Ignore all text files (logs, transcripts, scratch files)
-*.txt
-
 # Do NOT ignore Python scripts
 !*.py
 
-# Ignore VS Code workspace files
+# Ignore IDE-related files
+*.iml
+*.sublime-project
+*.sublime-workspace
 *.code-workspace
 
-# Ignore environment folders
+# Ignore environment and configuration files
+*.env
+*.env.local
+*.env.*.local
+*.config
+*.idea/
+*.vscode/
+
+# Ignore virtual environments
+venv/
+env/
 whisper_env/
 whisper-env/
+
 
 # Ignore common download/output/temp directories
 downloads/
@@ -27,3 +38,52 @@ my_package/
 # Do NOT ignore README (optional, if you want to keep it)
 # !README.md
 README.md
+
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore general system files
+.DS_Store
+Thumbs.db
+
+# Ignore lock files (for package managers)
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Ignore coverage and test output
+coverage/
+*.coverage
+*.coveragerc
+nosetests.xml
+test-results/
+
+# Ignore build and distribution directories
+build/
+dist/
+*.egg-info/
+
+# Ignore old generated files
+*.bak
+*.swp
+*.swo
+*.tmp
+
+# Ignore database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Ignore package managers' specific files (if not using them)
+*.gem
+*.tar.gz
+
+# Ignore logs and temporary files from Python libraries
+*.log
+*.pid
+*.gz
+*.zip
